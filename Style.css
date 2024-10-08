@@ -1,0 +1,10 @@
+body {
+  background-color: grey;
+}
+
+.ClcLayout {
+  height: 700px;
+  width: 600px;
+  border-color: Black;
+  border-radius: 10px;
+}
