@@ -1,10 +1,27 @@
 body {
-  background-color: grey;
+  background-color: black;
 }
 
 .ClcLayout {
-  height: 700px;
+  background-color: grey;
   width: 600px;
-  border-color: Black;
-  border-radius: 10px;
+  height: 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.buttons {
+  background-color: darkgrey;
+  width: 100px;
+  height: 50px;
+  margin: 30px;
+  padding: auto;
+  display: flexbox;
+  font-size: xx-large;
+}
+
+.searchBar {
+  width: 590px;
+  height: 50px;
+  margin: auto;
 }
