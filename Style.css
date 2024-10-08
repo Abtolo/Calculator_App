@@ -5,23 +5,43 @@ body {
 .ClcLayout {
   background-color: grey;
   width: 600px;
-  height: 700px;
+  height: 620px;
   margin: auto;
   padding: 10px;
+  border-radius: 20px;
 }
 
 .buttons {
   background-color: darkgrey;
-  width: 100px;
-  height: 50px;
-  margin: 30px;
+  width: 130px;
+  height: 80px;
+  margin: 7px;
+  margin-top: 30px;
   padding: auto;
   display: flexbox;
   font-size: xx-large;
+  border-radius: 20px;
 }
 
-.searchBar {
-  width: 590px;
+.deleteBar {
+  width: 570px;
+  height: 50px;
+  margin: 15px;
+  margin-bottom: 5px;
+  font-size: xx-large;
+  background-color: darkorange;
+  border-radius: 5px;
+}
+
+.responseBar {
+  width: 550px;
   height: 50px;
   margin: auto;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  font-size: xx-large;
+  font-family: cursive;
+  background-color: rgb(237, 235, 234);
+  border-radius: 15px;
 }
