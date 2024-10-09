@@ -2,14 +2,19 @@
 
 let finalAnswer = 0;
 let calculation = 0;
+let somme = ;
 
 let displaySum = function (number) {
+  if (number === "+") {
+    calculation = calculation + "+";
+  }
   document.querySelector(".responseBar").textContent += number;
   calculation += number;
 };
 
 document.querySelector(".deleteBar").addEventListener("click", function () {
   document.querySelector(".responseBar").textContent = 0;
+  calculation = 0;
 });
 
 document.querySelector(".buttons").addEventListener("click", function () {
@@ -77,6 +82,7 @@ document.querySelector("#btnPoint").addEventListener("click", function () {
   displaySum(".");
 });
 
-document.querySelector("#btn=").addEventListener("click", function () {
+document.querySelector("#btnEqual").addEventListener("click", function () {
+  console.log("equal works");
   document.querySelector(".responseBar").textContent = calculation;
 });
