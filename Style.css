@@ -21,7 +21,7 @@ body {
   display: flexbox;
   font-size: xx-large;
   border-radius: 20px;
-  cursor: grabbing;
+  cursor: crosshair;
 }
 
 .deleteBar {
