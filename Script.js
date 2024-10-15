@@ -2,12 +2,9 @@
 
 let finalAnswer = 0;
 let calculation = 0;
-let somme = ;
+let somme = 0;
 
 let displaySum = function (number) {
-  if (number === "+") {
-    calculation = calculation + "+";
-  }
   document.querySelector(".responseBar").textContent += number;
   calculation += number;
 };
@@ -55,11 +52,11 @@ document.querySelector("#btn2").addEventListener("click", function () {
 });
 
 document.querySelector("#btn1").addEventListener("click", function () {
-  displaySum(1);
+  displaySum("1");
 });
 
 document.querySelector("#btn0").addEventListener("click", function () {
-  displaySum(0);
+  displaySum("0");
 });
 
 document.querySelector("#btnPlus").addEventListener("click", function () {
@@ -86,3 +83,4 @@ document.querySelector("#btnEqual").addEventListener("click", function () {
   console.log("equal works");
   document.querySelector(".responseBar").textContent = calculation;
 });
+
