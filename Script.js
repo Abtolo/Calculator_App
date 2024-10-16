@@ -20,35 +20,35 @@ document.querySelector(".buttons").addEventListener("click", function () {
 });
 
 document.querySelector("#btn9").addEventListener("click", function () {
-  displaySum(9);
+  displaySum("9");
 });
 
 document.querySelector("#btn8").addEventListener("click", function () {
-  displaySum(8);
+  displaySum("8");
 });
 
 document.querySelector("#btn7").addEventListener("click", function () {
-  displaySum(7);
+  displaySum("7");
 });
 
 document.querySelector("#btn6").addEventListener("click", function () {
-  displaySum(6);
+  displaySum("6");
 });
 
 document.querySelector("#btn5").addEventListener("click", function () {
-  displaySum(5);
+  displaySum("5");
 });
 
 document.querySelector("#btn4").addEventListener("click", function () {
-  displaySum(4);
+  displaySum("4");
 });
 
 document.querySelector("#btn3").addEventListener("click", function () {
-  displaySum(3);
+  displaySum("3");
 });
 
 document.querySelector("#btn2").addEventListener("click", function () {
-  displaySum(2);
+  displaySum("2");
 });
 
 document.querySelector("#btn1").addEventListener("click", function () {
@@ -81,6 +81,8 @@ document.querySelector("#btnPoint").addEventListener("click", function () {
 
 document.querySelector("#btnEqual").addEventListener("click", function () {
   console.log("equal works");
+  parseInt(calculation);
+  eval(calculation);
+
   document.querySelector(".responseBar").textContent = calculation;
 });
-
