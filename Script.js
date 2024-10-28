@@ -10,7 +10,7 @@ let displaySum = function (number) {
 };
 
 document.querySelector(".deleteBar").addEventListener("click", function () {
-  document.querySelector(".responseBar").textContent = 0;
+  document.querySelector(".responseBar").textContent = "";
   calculation = 0;
 });
 
