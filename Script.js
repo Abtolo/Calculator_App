@@ -1,31 +1,23 @@
 "use strict";
 
-let finalAnswer = 0;
 let calculation = 0;
-let somme = 0;
+
+let expression = "";
 
 let displaySum = function (number) {
   document.querySelector(".responseBar").textContent += number;
-  calculation += number;
+  expression += number;
 };
 
 document.querySelector(".deleteBar").addEventListener("click", function () {
   document.querySelector(".responseBar").textContent = "";
-  calculation = 0;
+  expression = "";
 });
 
 document.querySelector(".buttons").addEventListener("click", function () {
   console.log("It works OK!!!");
 });
 
-const allNumbers = Array[(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)];
-
-for (let index = 0; index < 10; index++) {
-  allNumbers.array.forEach(displaySum(index));
-}
-allNumbers.array.forEach(displaySum());
-
-/*
 document.querySelector("#btn9").addEventListener("click", function () {
   displaySum("9");
 });
@@ -71,11 +63,11 @@ document.querySelector("#btnPlus").addEventListener("click", function () {
 });
 
 document.querySelector("#btnMult").addEventListener("click", function () {
-  displaySum("x");
+  displaySum("*");
 });
 
 document.querySelector("#btnDiv").addEventListener("click", function () {
-  displaySum(":");
+  displaySum("/");
 });
 
 document.querySelector("#btnMinus").addEventListener("click", function () {
@@ -84,11 +76,18 @@ document.querySelector("#btnMinus").addEventListener("click", function () {
 
 document.querySelector("#btnPoint").addEventListener("click", function () {
   displaySum(".");
-});*/
-
-let textContent = document.querySelector(".responseBar").textContent;
+});
 
 document.querySelector("#btnEqual").addEventListener("click", function () {
   console.log("equal works");
-  document.querySelector(".responseBar").textContent = eval(textContent);
+
+  try {
+    parseInt(expression);
+    let result = eval(expression); // Use eval only for this calculation step
+    document.querySelector(".responseBar").textContent = result;
+    expression = result.toString(); // Set expression to result for further calculations
+  } catch (error) {
+    document.querySelector(".responseBar").textContent = "Error";
+    expression = "";
+  }
 });
