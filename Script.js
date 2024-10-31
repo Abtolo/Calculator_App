@@ -15,10 +15,17 @@ document.querySelector(".deleteBar").addEventListener("click", function () {
 });
 
 document.querySelector(".buttons").addEventListener("click", function () {
-  document.querySelector(".responseBar").textContent;
-  console.log("It works");
+  console.log("It works OK!!!");
 });
 
+const allNumbers = Array[(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)];
+
+for (let index = 0; index < 10; index++) {
+  allNumbers.array.forEach(displaySum(index));
+}
+allNumbers.array.forEach(displaySum());
+
+/*
 document.querySelector("#btn9").addEventListener("click", function () {
   displaySum("9");
 });
@@ -77,12 +84,11 @@ document.querySelector("#btnMinus").addEventListener("click", function () {
 
 document.querySelector("#btnPoint").addEventListener("click", function () {
   displaySum(".");
-});
+});*/
+
+let textContent = document.querySelector(".responseBar").textContent;
 
 document.querySelector("#btnEqual").addEventListener("click", function () {
   console.log("equal works");
-  parseInt(calculation);
-  eval(calculation);
-
-  document.querySelector(".responseBar").textContent = calculation;
+  document.querySelector(".responseBar").textContent = eval(textContent);
 });
